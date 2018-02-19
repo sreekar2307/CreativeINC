@@ -119,7 +119,7 @@ nav a:hover,nav a:focus{
 
 .home-hero
 {
- background-image: url("img/hero-bg.jpg");
+ background-image: url("../img/hero-bg.jpg");
  background-size: cover;
  background-position: center;
  padding: 10em 0;
@@ -163,7 +163,7 @@ nav a:hover,nav a:focus{
   }
   .home-about{
   	margin:0;
-  	background-image: url("img/who-we-are.jpg");
+  	background-image: url("../img/who-we-are.jpg");
   	background-repeat: no-repeat;
   	padding:5em;
   }
