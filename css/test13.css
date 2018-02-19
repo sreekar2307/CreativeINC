@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+*{
+	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
+}
+body{
+	margin: 0px;
+	width: 100%;
+	font-family: 'Raleway','sans serif';
+	text-align: center;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.container{
+	margin:0;
+	width:100%;
+	text-align: center;
+}
+
+/*typography*/
+/*=================*/
+
+.title{
+	font-size:2.5rem;
+}
+.title span{
+	font-size: 0.9em;
+	font-weight: 300;
+	display: block;
+}
+.clearfix::after,section::after,footer::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*buttons*/
+/*=================*/
+
+@media(min-width: 60rem){
+     button
+    {
+	 padding: 0.75rem 4.5rem;
+    }
+}
+.button{
+	font-size: 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid;
+	padding: 0.5rem 1.5rem;
+	display: inline-block;
+}
+.button-accent{
+	color: #00ff6c;
+	border-color:#00ff6c;; 
+}
+.button-accent:hover,.button-accent:focus{
+ background-color: #00ff6c;
+ color: #232323;
+}
+.button-dark{
+	color: #232323;
+	border-color:#232323; 
+}
+.button-dark:hover,.button-dark:focus{
+ background-color: #232323;
+ color: #00ff6c;
+}
+.button-small{
+ font-size: 0.8rem;
+ font-weight: 900;
+}
+/*header*/
+/*================*/
+
+header{
+	position:absolute;
+	margin: 1em;
+	width: 100%;
+	padding: 1em
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+nav li{
+	display: inline-block;
+	margin: 1em;
+}
+nav a{
+	font-weight: 900;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding:0.5em;
+	color: #FFF;
+}
+nav a:hover,nav a:focus{
+ color: #DDD;
+}
+
+@media(min-width: 60rem){
+	.logo{
+		float: left;
+	}
+	nav{
+		float: right;
+	}
+}
+/*home hero*/
+/*================*/
+
+
+.home-hero
+{
+ background-image: url("/home/sreekar/Udemy/img/hero-bg.jpg");
+ background-size: cover;
+ background-position: center;
+ padding: 10em 0;
+ color: #FFF;
+}
+@media(min-width:60rem){
+	.home-hero{
+		height: 100vh;
+		padding-top: 35vh;
+	}
+}
+
+/*textbox*/
+.home-about-textbox{
+	background-color: #232323;
+	padding: 3rem;
+	outline: 3px solid #00ff6c;
+	margin-bottom:5em;
+	outline-offset: -2.5em;
+	position: relative;
+}
+.home-about-textbox h1{
+     position: absolute;
+     top: 0.15em;
+     left:50%;
+     transform: translate(-50%);
+     padding-left: 0.3em;
+     padding-right: 0.3em;
+     background-color: #232323;
+     z-index: 1023;
+	 color:#00ff6c;
+}
+.home-about-textbox p{
+	 color: #FFF;	
+}
+@media(min-width: 60rem)
+{
+  .container2{
+  	margin-left:4em;
+  	width: 90%;
+  }
+  .home-about{
+  	margin:0;
+  	background-image: url("/home/sreekar/Udemy/img/who-we-are.jpg");
+  	background-repeat: no-repeat;
+  	padding:5em;
+  }
+  .home-about-textbox
+  {
+    width: 45%;
+    padding:4em;
+    top:-7.5em;
+    left:3em;
+  }
+  .home-about-textbox h1{
+  	font-size: 1.2em;
+  	top: 0.5em;
+  }
+}
+@media(max-width: 346px)
+{
+  .home-about-textbox h1{
+  	font-size: 1.0em;
+  	top: 1em;
+  }
+}
+
+/*portfolio*/
+/*===============*/
+.portfolio{
+	margin: 3em 0em 0em;
+}
+.port-item{
+	position: relative;
+	margin: 0;
+	overflow:hidden;
+}
+figure img{
+	display: block;
+}
+.portfolio-desc{
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+    color: white;
+    background: rgba(0,0,0,0.75);
+    transform: translateY(150%);
+    padding-bottom:0.5em;
+}
+.port-item:hover .portfolio-desc{
+	 transform: translateY(0%);
+}
+@media(min-width: 37rem){
+	figure{
+		width: 50%;
+		float: left;
+	}
+}
+@media(min-width: 60rem){
+	figure{
+		width: 33.333334%;
+	}
+}
+/*CTA*/
+/*=================*/
+.cta{
+	background-color:#00ff6c;
+	margin: 0; 
+	padding:5em 0;
+}
+
+/*Footer*/
+/*=================*/
+footer{
+	padding-left: 1em;
+	background-color: #232323;
+	margin: 0;
+	color: #fff;
+}
+footer ul{
+list-style:none;
+}
+footer .col-3{
+	margin: 0;
+	width:100%;
+	text-align: left;
+	float: left;
+
+}
+.col-1{
+	width: 33.33334%;
+   float: left;
+	padding: 0;
+	margin: 0;
+}
+@media(min-width: 50rem){
+	footer{
+		padding: 2em;
+	}
+
+footer .col-3{
+	margin: 0;
+	width: 50%;
+	text-align: left;
+	float: left;
+	padding-left: 1em;
+
+}
+.col-1{
+	float: left;
+	width: 16.6667%;
+}
+}
